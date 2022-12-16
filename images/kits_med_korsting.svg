@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 362.47 1541.29">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .06em;
+      }
+
+      .cls-2 {
+        font-family: QwitcherGrypen-Regular, 'Qwitcher Grypen';
+        font-size: 335px;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(251.25 1541.29) rotate(-90)"><tspan x="0" y="0">Kits med </tspan><tspan class="cls-1" x="743.68" y="0">K</tspan><tspan x="940.66" y="0">orssting</tspan></text>
+</svg>

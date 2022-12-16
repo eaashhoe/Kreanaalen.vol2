@@ -1,0 +1,2359 @@
+h1
+
+/* -------------------- CSS RESET -------------------- */
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* -------------------- GENEREL CSS -------------------- */
+
+/* link til downloaded font */
+@font-face {
+  src: url(googlefont/Qwitcher_Grypen/QwitcherGrypen-Regular.ttf);
+  font-family: Qwitcher;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #343B34;
+}
+
+h2 {
+  font-size: 140px;
+  font-family: Qwitcher;
+  color: #343B34;
+}
+
+h3 {
+  font-size: 50px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #343B34;
+}
+
+h4 {
+  font-size: 45px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #343B34;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #343B34;
+}
+
+p {
+  font-size: 30px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #343B34;
+}
+
+.priser {
+  font-size: 30px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #343B34;
+}
+
+.beige-font {
+  color: #EFECE6;
+}
+
+body {
+  background-color: #EFECE6;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Knapper*/
+.btn_line_green {
+  /*Knap UDEN fyldt farve. Grønt outline.*/
+  width: 316px;
+  height: 84px;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #586056;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #586056;
+  border-width: 4px;
+  max-width: 80vw;
+  transition: 0.3s all ease-in-out;
+}
+
+.btn_line_beige {
+  /*Knap UDEN fyldt farve. Beige outline.*/
+  width: 316px;
+  height: 84px;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #EFECE6;
+  background-color: transparent;
+  border-style: solid;
+  border-color: #EFECE6;
+  border-width: 4px;
+  max-width: 80vw;
+  transition: 0.3s all ease-in-out;
+}
+
+
+.btn_filled_darkgreen {
+  /*Knap MED fyldt farve. MØRKE Grønt fyld.*/
+  /* width: 316px; */
+  height: 84px;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #EFECE6;
+  background-color: #586056;
+  border-style: none;
+  max-width: 80vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  transition: 0.3s all ease-in-out;
+}
+
+.btn_filled_lightgreen {
+  /*Knap MED fyldt farve. LYSE Grønt fyld.*/
+  width: 316px;
+  height: 84px;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #343B34;
+  background-color: #D9D9D1;
+  border-style: none;
+  max-width: 80vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1vw;
+  padding-top: 1vw;
+  transition: 0.3s all ease-in-out;
+}
+
+/*Hover effect til knapper*/
+.btn_line_green:hover,
+.btn_filled_lightgreen:hover {
+  background: #586056;
+  color: #EFECE6;
+}
+
+.btn_line_beige:hover {
+  background: #EFECE6;
+  color: #586056;
+}
+
+.btn_filled_darkgreen:hover {
+  background: #D9D9D1;
+  color: #586056;
+}
+
+/*Mellemrum mellem sektioner - padding bottom*/
+.korssting_hero,
+.hvad_er_korssting,
+.krossring_videosektion,
+.instagram-section,
+.error_content,
+.brodere_topsection,
+.brodere_2nd_section,
+.brodere_3rd_section,
+.brodere_4th_section,
+.produkt_galleri,
+.produkt_galleri_slideshow,
+.kreapakker-intro,
+.video_galleri_mobile,
+#komgodtigangsektion,
+#kundeanmeldeser-h3 {
+  padding-bottom: 10vw;
+}
+
+/*Mellemrum over sektioner - padding top: Gælder oftest kun ved sektioner med farveskift*/
+.hvad_er_korssting,
+.krossring_videosektion,
+.produkt_galleri_slideshow,
+#komgodtigangsektion {
+  padding-top: 10vw;
+}
+
+
+/* ---------------------------- HEADER ----------------------------- */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/* TOP NAVIGATION */
+/* Indikerer hvilken side man aktivt er på lige nu, grøn */
+.active-top-page-indicator {
+  font-size: 20px;
+  color: #343B34;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 600;
+  border-bottom: 2px solid;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-logo {
+  width: 65%;
+  cursor: pointer;
+}
+
+.kurv:hover {
+  max-width: 32%;
+  transition: .5s ease;
+}
+
+.top-nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 140px;
+  justify-items: center;
+  align-items: center;
+  background-color: #EFECE6;
+}
+
+.top-nav-a {
+  font-size: 20px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #343B34;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.top-nav-a:hover {
+  font-weight: 400;
+}
+
+.top-nav :nth-child(4) {
+  grid-column: span 2;
+  display: grid;
+  justify-items: center;
+}
+
+/*------------------- SUB NAVIGATION------------------------------- */
+/* Indikerer hvilken side man aktivt er på lige nu, beige */
+.active-sub-page-indicator {
+  font-size: 20px;
+  color: #EFECE6;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 600;
+  border-bottom: 2px solid;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid;
+  background: none;
+}
+
+.sub-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  background-color: #586056;
+  padding: 1% 0%;
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.4);
+}
+
+.sub-nav-a {
+  font-size: 20px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #EFECE6;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  background: none;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #586056;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+}
+
+.dropdown-content a {
+  float: none;
+  color: #EFECE6;
+  font-size: 20px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: left;
+  display: block;
+  padding: 12px 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #343B34;
+  color: #EFECE6;
+}
+
+.dropbtn:hover,
+.sub-nav-a:hover {
+  font-weight: 400;
+}
+
+/* ----------------------- FOOTER ------------------------------------ */
+
+footer {
+  background-color: #586056;
+  padding: 4% 0%;
+}
+
+
+.footer-links-a {
+  color: #EFECE6;
+  font-size: 20px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.footer-links-a:hover {
+  font-weight: 400;
+}
+
+.soMe-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  gap: 36px;
+  align-items: center;
+}
+
+/*-------------FORSIDE - TOPSEKTION TEASER---------------------*/
+
+.forside_sektion1_jul {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 25vw auto 25vw;
+  grid-gap: 20px;
+}
+
+.billede1_sektion1_jul {
+  grid-column: 1/3;
+  grid-row: 1/4;
+  max-width: 40vw;
+
+}
+
+.Overskriftjul_sektion1 {
+  grid-column: 2/5;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+  padding: 2vw;
+}
+
+.Overskriftjul_sektion1>h1 {
+  font-size: 5.5vw;
+}
+
+.Overskriftjul_sektion1>h2 {
+  font-size: 7vw;
+}
+
+.billede2_sektion1_jul {
+  grid-column: 2/4;
+  grid-row: 2/4;
+  display: flex;
+  justify-content: center;
+  max-width: 25vw;
+}
+
+.billede3_sektion1_jul {
+  display: block;
+  grid-column: 5;
+  grid-row: 1;
+  max-width: 30vw;
+
+}
+
+.brodtekstjul_sektion1 {
+  grid-column: 4/6;
+  grid-row: 3;
+  padding: 2vw;
+  padding-top: 4vw;
+}
+
+/*---------FORSIDE - KOM GODT I GANG SEKTION-----------*/
+
+#komgodtigangsektion {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/broderi-gron-ikke-fyldt.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bokskomgodtigang {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Venstrebillede {
+  width: 40%;
+  height: 400px;
+  margin-bottom: 80px;
+}
+
+.Højrebillede {
+  width: 50%;
+  max-height: 600px;
+  background-color: #586056;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18% 8%;
+  /* padding: 30px; */
+  color: #EFECE6;
+}
+
+.komgodtigangtekst {
+  color: #EFECE6;
+  text-align: left;
+  padding-bottom: 50px;
+}
+
+/* .knapkomgodtigang{
+      text-decoration: none;
+      font-family: josefin-sans, sans-serif;
+      text-transform: uppercase;
+      margin-top: 30px;
+      border: 4px solid #EFECE6;
+      color: #EFECE6;
+      padding: 20px 30px;
+      display: inline-block;
+      letter-spacing: 2px;
+      justify-content: center;
+  } */
+
+/*-----------FORSIDE- VIDEOSEKTION------------------*/
+/*videosektionen genbruger koden fra produkt_galleri, som kan findes under Laer at brodere.*/
+.video_galleri_mobile {
+  /*Fjerner mobil layout*/
+  display: none;
+}
+
+/*-----------FORSIDE - KUNDEANMELDELSER-------------*/
+
+.kundeanmeldelser {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #080808;
+  background-image: url(images/broderi-gron-ikke-fyldt.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.kundeanmeldelser-container {
+  position: relative;
+  width: 800px;
+  min-width: 350px;
+  min-height: 250px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.kundeanmeldelser-wrapper {
+  width: 300%;
+  /* 300% fordi vi har 3 cards */
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 1s;
+}
+
+.kundeanmeldelser-card {
+  width: 800px;
+  min-height: 100%;
+  background: #586056;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+.kundeanmeldelser-card-thumb {
+  width: 70%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.review-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.kundeanmeldelser-card-body {
+  width: 120%;
+  /* min-height: 100%; */
+  height: auto;
+  margin-left: 20px;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.review {
+  margin-top: 30px;
+}
+
+.rating {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.indicators button {
+  background: none;
+  border: none;
+  outline: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #586056;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: .5s;
+}
+
+button.kundeanmeldelser-active {
+  width: 40px;
+  border-radius: 50px;
+  background: #586056;
+}
+
+/* -------------------- INSTAGRAM FEED -------------------- */
+
+.instagram-section {
+  margin: 5%;
+  position: relative;
+}
+
+
+#instagram-mobil {
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 55%;
+  transform: rotate(345deg);
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+.instagram-feed {
+  position: relative;
+}
+
+.instagram-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.instagram-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #586056d4;
+}
+
+.instagram-feed:hover .instagram-overlay {
+  opacity: 1;
+}
+
+.instagram-text {
+  color: white;
+  font-size: 25px;
+  font-family: josefin-sans, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-decoration: none;
+}
+
+.instagram-text:hover {
+  font-size: 30px;
+  transition: .5s ease;
+}
+
+/* -------------------- KREAPAKKER UNDERSIDE -------------------- */
+
+
+.katagorier {
+  border-radius: 50%;
+}
+
+.individuel-katagori-grid {
+  display: grid;
+  justify-items: center;
+}
+
+.h5-hover-katagori {
+  padding-top: 2vw;
+}
+
+.individuel-katagori-grid a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.h5-hover-katagori:hover {
+  font-weight: 500;
+  font-size: 22px;
+  transition: 0.6s ease;
+}
+
+/*KREAPAKKER INTRO*/
+.kreapakker-intro {
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-columns: auto auto auto auto;
+  background-image: url("images/broderi-texture.svg");
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
+
+.kreapakker-intro-tekst {
+  grid-column: 3 / 5;
+  grid-row: 1;
+  padding-left: 15vw;
+}
+
+.kreapakker-billede-mrsfox {
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+  max-width: 35vw;
+  min-width: 200px;
+}
+
+.kreapakker-billede-noddeknaekker {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.billede-noddeknaekker {
+  max-width: 17vw;
+  min-width: 240px;
+}
+
+
+/* -------------------- PRODUKT OVERSIGT -------------------- */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #586056b3;
+}
+
+.dot-element {
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #D9D9D1;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #586056;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* produktinformation */
+
+.produktunderside {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  align-items: end;
+
+  padding: 4%;
+}
+
+.produkt-katagori-kursiv {
+  display: grid;
+  z-index: 1;
+  transform: rotate(270deg);
+}
+
+.produktinformation {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.indholdoversigt {
+  padding: 4%;
+}
+
+.indhold-punkter {
+  display: flex;
+}
+
+.indhold-checkmark {
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.produkt-pris {
+  padding-top: 20px;
+}
+
+.input-produkt {
+  width: 50px;
+  height: 30px;
+  background-color: #EFECE6;
+  border: 1px solid #586056;
+  margin-bottom: 20px;
+}
+
+input::placeholder {
+  text-align: center;
+  font-family: josefin-sans, sans-serif;
+  color: #586056;
+}
+
+.produkt-kob-knap {
+  width: 400px;
+  height: 60px;
+  background-color: #586056;
+  border: none;
+  font-size: 30px;
+  font-family: josefin-sans, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: #EFECE6;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.produkt-kob-knap:hover {
+  background-color: #D9D9D1;
+  color: #586056
+}
+
+.slides-img-width {
+  width: 100%;
+}
+
+
+/*-----------PRODUKT OVERSIGT - ANBEFALET PRODUKTER--------- */
+#anbefalede_produktoverskrift {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.anbefalede_produktsektion {
+  display: flex;
+  gap: 15%;
+  padding: 6%;
+  justify-content: space-evenly;
+}
+
+.anbefalede_produkter_1 {
+  flex-direction: column;
+  text-align: center;
+  line-height: 70px;
+
+
+}
+
+.anbefalede_produkter_2 {
+  flex-direction: column;
+  text-align: center;
+  line-height: 70px;
+
+}
+
+.anbefalede_produkter_3 {
+  flex-direction: column;
+  text-align: center;
+  line-height: 70px;
+}
+
+.prisprodukt {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+#btn_anbefalede_produkt {
+  background-color: #586056;
+  border: none;
+  color: #EFECE6;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.atag_produkter {
+  text-decoration: none;
+  color: #EFECE6;
+}
+
+/*-------------ERROR SIDE----------------------*/
+
+body {
+  background-color: #EFECE6;
+}
+
+.error_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/broderi-texture.svg");
+}
+
+.errortekst {
+  padding-top: 2vw;
+  padding-bottom: 5vw;
+  font-size: x-large;
+  text-align: center;
+  line-height: 145%;
+  max-width: 85vw;
+}
+
+.errorknap {
+  text-align: center;
+}
+
+.errorknap>button>a {
+  text-decoration: none;
+  color: #EFECE6;
+}
+
+
+/* -------------------- KORSSTING UNDERSIDE -------------------- */
+/*TOPSECTION*/
+.korssting_topsection_web {
+  /*Tilføjer billede til webversion*/
+  display: block;
+}
+
+.korssting_topsection_mobile {
+  /*Fjerner billede fra mobilversion*/
+  display: none;
+}
+
+.korssting_hero {
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr 3fr;
+  grid-template-rows: 3fr 2fr 1.5fr;
+}
+
+.korssting_paaske_lyseroed {
+  grid-column: 1/3;
+  grid-row: 1/4;
+  max-width: 40vw;
+  padding-top: 1vw;
+  padding-left: 2vw;
+}
+
+.korssting_overskrift {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  justify-self: end;
+}
+
+.korssting_jul_i_1969 {
+  grid-column: 5/6;
+  grid-row: 1/3;
+  max-width: 500px;
+  justify-self: end;
+}
+
+.korssting_broedtekst {
+  grid-column: 4/6;
+  grid-row: 3/4;
+}
+
+/*Hvad er korsting*/
+.korssting_2nd_section_mobile {
+  /*Fjerner billede fra mobilversion*/
+  display: none
+}
+
+.hvad_er_korssting {
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-columns: auto;
+  background-color: #D9D9D1;
+  padding-bottom: 100px;
+}
+
+
+.HEK_text {
+  grid-column: 1;
+  grid-row: 1/3;
+  padding-left: 12%;
+  padding-bottom: 25px;
+  padding-right: 2vw;
+}
+
+
+.HEK_julesokker {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  margin-right: 20px;
+}
+
+.HEK_pude {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  max-width: 70%;
+}
+
+/*VIDEO SEKTION*/
+.krossring_videosektion {
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-columns: auto;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  background-image: url(images/broderi-texture.svg);
+}
+
+.korssting_video {
+  grid-column: 1;
+}
+
+.korssting_video_text {
+  grid-column: 2;
+}
+
+
+.korssting_video_thumbnail {
+  max-width: 55vw;
+}
+
+/*----------------------LAER AT BRODERE ------------------*/
+/*TOPSECTION*/
+/*Display Grid for hele sektionen*/
+.brodere_topsection {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto 5vw auto;
+  /*Så indholdet bestemmer størrelsen*/
+}
+
+/*Placering de tre divs i grid, og elementernes størrelse*/
+.brodere_topsection_big_picture {
+  grid-column: 1 /3;
+  grid-row: 1 / 6;
+  max-width: 40vw;
+  min-width: 30vw;
+}
+
+.brodere_topsection_small_picture {
+  grid-column: 2 / 4;
+  grid-row: 2 / 5;
+  max-width: 30vw;
+  min-width: 20vw;
+}
+
+.brodere_topsection_text {
+  grid-column: 3 / 5;
+  grid-row: 3 / 4;
+  padding-right: 100px;
+}
+
+.brodere_topsection_text_2 {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+/*2ND_SECTION*/
+.broderer_2nd_section_mobilepicture {
+  display: none;
+  /*fjerner billedet fra mobil versionen*/
+}
+
+.brodere_2nd_section {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto;
+  /* padding-bottom: 200px; */
+}
+
+.brodere_2nd_section_small_picture {
+  grid-column: 1;
+  grid-row: 2 / 3;
+  max-width: 30vw;
+  min-width: 10vw;
+}
+
+.brodere_2nd_section_text {
+  grid-column: 2;
+  grid-row: 2 / 3;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.brodere_2nd_section_big_picture {
+  grid-column: 3;
+  grid-row: 1 / 4;
+  max-width: 30vw;
+  min-width: 5vw;
+}
+
+/*3RD_SECTION*/
+.brodere_3rd_section {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto;
+  /* padding-bottom: 200px; */
+  padding-left: 50px;
+  padding-right: 50px;
+  background-image: url(images/broderi-texture.svg);
+}
+
+.brodere_3rd_section_mobile_btn {
+  display: none;
+  /*Fjerner den grønne knap fra mobil version*/
+}
+
+.brodere_3rd_section_web_btn {
+  display: block;
+  /*Tilføjer beige knap til web version*/
+}
+
+.brodere_3rd_section_box {
+  background-color: #586056;
+  /* laver en grøn boks*/
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+}
+
+.brodere_3rd_section_text {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  padding-left: 5vw;
+  padding-top: 5vw;
+}
+
+.brodere_3rd_section_text>p,
+.brodere_3rd_section_text>h3 {
+  color: #EFECE6;
+  /*Skifter tekstens farve til beige*/
+}
+
+.brodere_3rd_section_picture {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+
+/*4TH_SECTION*/
+.brodere_4th_section {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto;
+}
+
+.brodere_4th_section_mobile_btn {
+  display: none;
+  /*Fjerner knap til mobil version*/
+}
+
+.brodere_4th_section_web_btn {
+  display: block;
+  /*Tilføjer knap fra web version*/
+}
+
+.hand_with_egg_web {
+  /*Tilføjer billede til web version*/
+  display: block;
+}
+
+.hand_with_egg_mobile {
+  /*Fjerner billede fra mobil version*/
+  display: none;
+}
+
+.brodere_4th_section_small_picture {
+  grid-column: 1;
+  grid-row: 2 / 3;
+  max-width: 30vw;
+  /* min-width: 10vw;*/
+}
+
+.brodere_4th_section_text {
+  grid-column: 2;
+  grid-row: 2 / 3;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.brodere_4th_section_big_picture {
+  grid-column: 3;
+  grid-row: 1 / 4;
+  max-width: 30vw;
+}
+
+/*5TH_SECTION (produkt_galleri)*/
+.produkt_galleri_slideshow {
+  /*fjerner mobil layout*/
+  display: none;
+}
+
+.produkt_galleri {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto 15vw;
+  grid-template-rows: 280px 280px 280px auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.produkt_galleri_overskrift {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 9vw;
+}
+
+.produkt_galleri_big_picture {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  max-height: 100%;
+}
+
+.produkt_galleri_top_small_picture {
+  grid-column: 3;
+  grid-row: 1 / 2;
+}
+
+.produkt_galleri_top_small_picture_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 4;
+  grid-row: 1 / 2;
+}
+
+.produkt_galleri_middle_small_picture {
+  grid-column: 3;
+  grid-row: 2 / 3;
+}
+
+.produkt_galleri_middle_small_picture_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 4;
+  grid-row: 2 / 3;
+}
+
+.produkt_galleri_big_picture_text {
+  text-align: center;
+}
+
+.produkt_galleri_lowest_small_picture {
+  grid-column: 3;
+  grid-row: 3 / 4;
+}
+
+.produkt_galleri_lowest_small_picture_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 4;
+  grid-row: 3 / 4;
+}
+
+.produkt_galleri_big_picture_text>h4,
+.produkt_galleri_top_small_picture_text>h4,
+.produkt_galleri_middle_small_picture_text>h4,
+.produkt_galleri_lowest_small_picture_text>h4 {
+  font-size: 35px;
+  /*Gør teksten mindre*/
+  text-align: center;
+}
+
+.produkt_galleri_big_picture_text>p,
+.produkt_galleri_top_small_picture_text>p,
+.produkt_galleri_middle_small_picture_text>p,
+.produkt_galleri_lowest_small_picture_text>p {
+  text-align: center;
+}
+
+/* -------------------- MEDIA QUERIES -------------------- */
+
+@media only screen and (min-width:1024px) {
+
+  /* burgermenu */
+  .burgermenu {
+    display: none;
+  }
+
+  .kurv {
+    max-width: 30%;
+  }
+
+  .hovedmenu-ikon {
+    display: block;
+  }
+
+  .burgermenu-ikon {
+    display: none;
+  }
+
+  /* footer */
+  footer {
+    display: grid;
+    grid-template-columns: 200px 500px 300px;
+    box-shadow: 0px 0 5px rgb(0 0 0 / 80%);
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-links {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+    gap: 30px;
+  }
+
+  .submark {
+    width: 50%;
+  }
+
+  .padding-mobil {
+    padding-top: 15%;
+  }
+
+  /* alle kreapakker underside */
+  /* katagorier */
+  #katagori-sortering-grid {
+    padding: 10% 5%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2rem;
+  }
+
+  .h3-katagori {
+    display: none;
+  }
+
+  #kreapakker-placering {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width:1270px) {
+
+  /*KORSSTING*/
+  .krossring_videosektion {
+    background-image: url(images/broderi-texture.svg);
+  }
+
+  .korssting_video {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+    width: 100%;
+  }
+
+  .korssting_video_text {
+    grid-column: 1;
+    grid-row: 1;
+    padding-bottom: 30px;
+    justify-self: center;
+    text-align: center;
+  }
+
+  .korssting_video_thumbnail {
+    max-width: 90vw;
+    justify-self: center;
+  }
+
+  /*LÆR AT BRODERE*/
+  .produkt_galleri {
+    grid-template-columns: 7vw min-content min-content auto;
+    grid-template-rows: 200px 200px 200px;
+  }
+
+  .produkt_galleri_big_picture_text>h4,
+  .produkt_galleri_top_small_picture_text>h4,
+  .produkt_galleri_middle_small_picture_text>h4,
+  .produkt_galleri_lowest_small_picture_text>h4 {
+    font-size: 30px;
+    /*Gør teksten mindre*/
+  }
+
+  .produkt_galleri_top_small_picture>img,
+  .produkt_galleri_middle_small_picture>img,
+  .produkt_galleri_lowest_small_picture>img {
+    max-width: 240px;
+  }
+
+  .produkt_galleri_big_picture>img,
+  .produkt_galleri_big_picture>video {
+    min-width: 400px;
+  }
+
+  /*Forside - Video_galleri*/
+  .video_galleri {
+    grid-template-columns: 13vw min-content min-content auto;
+  }
+
+}
+
+@media only screen and (max-width:1024px) {
+
+  /* header */
+  .top-nav-a,
+  .sub-nav {
+    display: none;
+  }
+
+  .top-nav {
+    background-color: #586056;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 160px;
+  }
+
+  .burgermenu {
+    width: 50px;
+  }
+
+  .kurv {
+    width: 60px;
+  }
+
+  .hovedmenu-ikon {
+    display: none;
+  }
+
+  .top-nav :nth-child(4) {
+    display: none;
+  }
+
+  /* burger menu */
+  #burgermenu-body {
+    background-color: #586056;
+    padding: 10%;
+  }
+
+  #brugermenu-exit {
+    width: 50px;
+  }
+
+  #burgermenu-nav {
+    padding-top: 60px;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .dropbtn .sub-nav-a {
+    padding: 0;
+  }
+
+  .collapsible {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .collapsible:hover {
+    font-weight: 400;
+  }
+
+  .content {
+    padding: 20px 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+    font-size: 18px;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border-top: 1px solid #EFECE6;
+
+  }
+
+  .content a {
+    display: grid;
+    justify-items: center;
+    color: #EFECE6;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .foldedmenu-font {
+    font-size: 20px;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #EFECE6;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    background: none;
+    border: none;
+  }
+
+  /* footer */
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
+  }
+
+  .footer-links {
+    display: grid;
+    gap: 30px;
+  }
+
+  .submark {
+    width: 20%;
+    position: relative;
+    margin-top: -100px;
+  }
+
+  .soMe-icons {
+    width: 100%;
+  }
+
+  .soMe-icons:hover {
+    transition: .5s ease;
+  }
+
+  /*Forside*/
+  .forside_sektion1_jul {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+  }
+
+  .billede1_sektion1_jul {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    max-width: 50vw;
+
+  }
+
+  .Overskriftjul_sektion1 {
+    grid-column: 1/5;
+    grid-row: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    padding: 2vw;
+  }
+
+  .Overskriftjul_sektion1>h1 {
+    font-size: 8vw;
+  }
+
+  .Overskriftjul_sektion1>h2 {
+    font-size: 14vw;
+  }
+
+  .billede2_sektion1_jul {
+    grid-column: 2/5;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    max-width: 50vw;
+  }
+
+  .billede3_sektion1_jul {
+    display: none;
+  }
+
+  .brodtekstjul_sektion1 {
+    grid-column: 1/5;
+    grid-row: 5;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  /*Forside - video_galleri*/
+  .video_galleri_mobile {
+    display: block;
+  }
+
+  .video_galleri_mobile>h3 {
+    text-align: center;
+  }
+
+  .videos_on_line {
+    padding-top: 5vw;
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .video_1 {
+    grid-column: 1;
+  }
+
+  .video_2 {
+    grid-column: 2;
+  }
+
+  .video_3 {
+    grid-column: 3;
+  }
+
+  .video_1>h4,
+  .video_2>h4,
+  .video_3>h4 {
+    padding-top: 2vw;
+    text-align: center;
+  }
+
+  /*Instagram*/
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #instagram-mobil {
+    display: none;
+  }
+
+  /* alle kreapakker underside */
+  .kategorier_og_intro {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /* katagorier */
+  #katagori-sortering-grid {
+    padding: 10% 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+  }
+
+  #katagori-sortering-grid:last-child {
+    grid-column: span 2;
+    max-width: 50%;
+    align-items: center;
+    margin-left: 25%;
+
+  }
+
+  .individuel-katagori-grid {
+    justify-items: normal;
+  }
+
+  .h3-katagori {
+    display: block;
+    grid-column: span 2;
+  }
+
+  #kreapakker-placering {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  /*KREAPAKKER INTRO*/
+  .kreapakker-intro {
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-rows: 5vw auto auto auto;
+    /* background-image: transparent; */
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .kreapakker-intro-tekst {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    padding-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .kreapakker-intro-tekst>h1,
+  .kreapakker-intro-tekst>p {
+    text-align: center;
+  }
+
+  .kreapakker-billede-mrsfox {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    max-width: 60vw;
+    min-width: 200px;
+  }
+
+  .kreapakker-billede-noddeknaekker {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    justify-content: start;
+  }
+
+  .billede-noddeknaekker {
+    max-width: 50vw;
+    min-width: 240px;
+  }
+
+  /* produktside */
+
+  .produktunderside {
+    grid-template-columns: 1fr;
+  }
+
+  .produkt-katagori-kursiv {
+    display: none;
+  }
+
+  /*KORSSTING*/
+  /*TOPSECTION*/
+  .korssting_2nd_section_mobile {
+    display: none;
+    /*Fjerner billede fra mobilversion*/
+  }
+
+  .korssting_2nd_section_web {
+    display: block;
+    /*Tilføjer billede*/
+  }
+
+  .korssting_topsection_web {
+    /*Fjerner billede fra webversion*/
+    display: none;
+  }
+
+  .korssting_topsection_mobile {
+    /*Tilføjer billede til mobilversion*/
+    display: block;
+  }
+
+  .korssting_hero {
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: auto;
+    padding-bottom: 100px;
+  }
+
+  .korssting_paaske_lyseroed {
+    max-width: 600px;
+    padding: 0;
+    /*Fjerner padding*/
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .korssting_jul_i_1969 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    justify-self: start;
+  }
+
+  .korssting_overskrift {
+    grid-column: 1 / 4;
+    grid-row: 3;
+    z-index: 1;
+    /*Så teksten kommer over billedet*/
+    padding-left: 2vw;
+    justify-self: start;
+  }
+
+  .korssting_broedtekst {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    padding-left: 2vw;
+  }
+
+  /*2ND SECTION - HVAD ER KORSSTING?*/
+  .HEK_pude {
+    display: none;
+    /*Fjerner det ene billede*/
+  }
+
+
+  /*Lær at brodere*/
+  /*Topsection*/
+  .brodere_topsection {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vw;
+    grid-template-columns: 30vw auto auto;
+  }
+
+  /*Ændre elementernes placering i grid*/
+  .brodere_topsection_big_picture {
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+  }
+
+  .brodere_topsection_small_picture {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .brodere_topsection_text {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    padding: 0;
+    /*fjerner padding*/
+    text-align: center;
+    /*centrer tekst*/
+  }
+
+  .brodere_topsection_text_2 {
+    grid-column: 1 / 4;
+    grid-row: 5;
+    text-align: center;
+  }
+
+  /*2ND_SECTION*/
+  .brodere_2nd_section {
+    margin: 5vw;
+    grid-template-rows: 5vw auto;
+    /*Ændre grid*/
+    grid-template-columns: 5vw auto 10vw;
+  }
+
+  .brodere_2nd_section_small_picture {
+    display: none;
+    /*fjerner billede*/
+  }
+
+  .brodere_2nd_section_big_picture {
+    display: none;
+    /*fjerner billede*/
+  }
+
+  .brodere_2nd_section_text {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #D9D9D1;
+    /*Laver den om til en farvet boks*/
+    padding: 5vw;
+    text-align: center;
+    /*centrer tekst*/
+
+  }
+
+  .broderer_2nd_section_mobilepicture {
+    display: block;
+    /*tilføjer nyt billede*/
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+
+  /*3RD_SECTION*/
+  .brodere_3rd_section {
+    background-image: none;
+    /*Fjerner baggrundsbillede*/
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .brodere_3rd_section_mobile_btn {
+    display: block;
+    /*Tilføjer den grønne knap til mobil version*/
+  }
+
+  .brodere_3rd_section_web_btn {
+    display: none;
+    /*Fjerner beige knap fra web version*/
+  }
+
+  .brodere_3rd_section_box {
+    display: none;
+    /*Fjerner grøn boks*/
+  }
+
+  .brodere_3rd_section_text {
+    grid-column: 1;
+    /*Laver om til 1 column*/
+    grid-row: 1;
+    padding-top: 0;
+    padding-right: 5vw;
+  }
+
+  .brodere_3rd_section_text>p,
+  .brodere_3rd_section_text>h3 {
+    color: #343B34
+      /*Skifter tekstens farve til Mørkegrøn*/
+  }
+
+  .brodere_3rd_section_picture {
+    grid-column: 1;
+    /*Laver om til 1 column*/
+    grid-row: 2;
+    display: flex;
+    /*display flex for at centrerer divs indhold*/
+    flex-direction: column;
+    align-items: center;
+    /*centrer billede og knap*/
+    width: 100vw;
+    /*100% viewport width*/
+  }
+
+  /*4TH_SECTION*/
+  .brodere_4th_section_mobile_btn {
+    display: block;
+    /*Tilføjer knap til mobil version*/
+  }
+
+  .brodere_4th_section_web_btn {
+    display: none;
+    /*Fjerner knap fra web version*/
+  }
+
+  .hand_with_egg_web {
+    /*Fjerner billede til web version*/
+    display: none;
+  }
+
+  .hand_with_egg_mobile {
+    /*Tilføjer billede til mobil version*/
+    display: block;
+  }
+
+  .brodere_4th_section_small_picture {
+    display: none;
+    /*Fjerner lille billede*/
+  }
+
+  .brodere_4th_section_text {
+    grid-column: 1;
+    /*Laver om til 1 column*/
+    grid-row: 1;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .brodere_4th_section_big_picture {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 100vw;
+    /*Ændre størrelse til 100% viewport width*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*5TH SECTION - PRODUKT GALLERI*/
+  .produkt_galleri_slideshow {
+    /*tilføjer mobil layout*/
+    display: block;
+  }
+
+  .produkt_galleri {
+    /*Fjerner web layout*/
+    display: none;
+  }
+
+  .produkt_galleri_slideshow>h3 {
+    text-align: center;
+  }
+
+  .produkt_galleri_btn_container {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+
+
+@media only screen and (max-width:768px) {
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 55px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .priser {
+    font-size: 16px;
+  }
+
+  /*Forside - Kom godt i gang*/
+  .bokskomgodtigang {
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  .Venstrebillede {
+    width: 100%;
+  }
+
+  .Højrebillede {
+    width: 60%;
+    margin: 0;
+    margin-top: -300px;
+  }
+
+  /* kundeanmeldelser */
+
+  .kundeanmeldelser-container {
+    width: 50%;
+    /* margin: auto; */
+  }
+
+  .kundeanmeldelser-card {
+    flex-direction: column;
+  }
+
+  .kundeanmeldelser-card-thumb {
+    width: 100%;
+  }
+
+  .kundeanmeldelser-card-body {
+    width: 100%;
+    min-height: auto;
+    margin-left: 0;
+  }
+
+  /* kreapakker underside */
+
+  /*PRODUKTOVERSIGT - ANBEFALET TIL DIG*/
+  .anbefalede_produktsektion {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /*KORSSTING*/
+  /*2ND SECTION - HVAD ER KORSSTING?*/
+  .korssting_2nd_section_mobile {
+    display: block;
+    /*Tilføjer nyt billede til mobilversion*/
+  }
+
+  .korssting_2nd_section_web {
+    /*Fjerner billede fra webversion*/
+    display: none
+  }
+
+  .hvad_er_korssting {
+    padding: 0;
+    /*nulstiller padding*/
+    /* padding-bottom: 200px; */
+    grid-template-rows: 30vw auto;
+    /*Ændre grid*/
+    grid-template-columns: 5vw auto 10vw;
+    background-color: transparent;
+    margin-bottom: 10vw;
+  }
+
+  .HEK_text {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #586056;
+    /*Laver den om til en farvet boks*/
+    padding: 5vw;
+    text-align: center;
+    /*centrer tekst*/
+  }
+
+  .HEK_text>p,
+  .HEK_text>h3 {
+    color: #EFECE6;
+  }
+
+  .HEK_julesokker {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    z-index: -1;
+    width: 100vw;
+  }
+
+  /*VIDEOSEKTION*/
+  .krossring_videosektion {
+    background-image: url(images/broderi-texture_beige.svg);
+    background-color: #D9D9D1;
+  }
+
+  .korssting_video_text {
+    background-color: #D9D9D1;
+    /*Så der er bedre læsbarhed*/
+    border-radius: 5px;
+  }
+
+  /* anbefalede produkter */
+  .anbefalede_produktsektion {
+    padding: 6% 6% 20% 6%;
+  }
+
+}
+
+@media only screen and (max-width:580px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .priser {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .submark {
+    margin-top: -80px;
+  }
+
+  /* produktside */
+  .produkt-kob-knap {
+    width: 300px;
+  }
+
+  /* kundeanmeldelser */
+
+  #kundeanmeldeser-h3 {
+    margin-left: 6vw;
+  }
+}
+
+@media only screen and (max-width:425px) {
+
+  /* Footer */
+  .submark {
+    margin-top: -50px;
+  }
+
+}
+
+@media only screen and (min-width:375px) {}

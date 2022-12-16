@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 633.18 531.63">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .02em;
+      }
+
+      .cls-2 {
+        letter-spacing: .02em;
+      }
+
+      .cls-3 {
+        letter-spacing: .02em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        letter-spacing: .02em;
+      }
+
+      .cls-6 {
+        font-size: 199.52px;
+      }
+
+      .cls-6, .cls-7 {
+        font-family: QwitcherGrypen-Bold, 'Qwitcher Grypen';
+        font-weight: 700;
+      }
+
+      .cls-6, .cls-7, .cls-8 {
+        fill: #efece6;
+      }
+
+      .cls-7 {
+        font-size: 301.78px;
+        letter-spacing: .02em;
+      }
+
+      .cls-8 {
+        font-family: JosefinSans-Light, 'Josefin Sans';
+        font-size: 48.75px;
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <text class="cls-6" transform="translate(182.71 308.93) scale(.95 1)"><tspan class="cls-4" x="0" y="0">r</tspan><tspan class="cls-1" x="52.87" y="0">eanålen</tspan></text>
+  <text class="cls-8" transform="translate(272.71 371.93) scale(1.08 1)"><tspan class="cls-2" x="0" y="0">B</tspan><tspan class="cls-5" x="29.93" y="0">R</tspan><tspan class="cls-3" x="61.62" y="0">ODERIKITS</tspan></text>
+  <text class="cls-7" transform="translate(2.87 326.93) scale(.95 1)"><tspan x="0" y="0">K</tspan></text>
+</svg>

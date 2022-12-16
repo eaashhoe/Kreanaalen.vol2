@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreanålen</title>
+    <meta name="description" content="Kreanålen sælger krea-kits, der indeholder materialer og instruktioner til ens broderi-projekt.">
+    <link rel="stylesheet" href="https://use.typekit.net/ztu7mbr.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <header>
+      <!-- Top navigation -->
+      <nav class="top-nav">
+        <a href="burgermenu.html" class="burgermenu">
+          <img src="images/burgermenu.svg" alt="burgermenu">
+        </a>
+        <a href="index.html" class="top-nav-a">Forside</a>
+        <a href="error.html" class="top-nav-a">Om Os</a>
+        <a href="index.html">
+          <img src="images/logo-gron.svg" class="main-logo hovedmenu-ikon" alt="Hovedmenu ikon">
+        </a>
+        <a href="index.html" class="burgermenu-ikon main-logo">
+          <img src="images/logo-beige.svg" alt="Kreanålens logo i beige">
+        </a>
+        <a href="error.html" class="top-nav-a">Min Profil</a>
+        <a href="error.html" class="hovedmenu-ikon">
+          <img src="images/kurv-gron.svg" class="kurv" alt="kurv i grøn">
+        </a>
+        <a href="error.html" class="burgermenu-ikon">
+          <img src="images/kurv-beige.svg" class="kurv" alt="kurv i beige">
+        </a>
+      </nav>
+      <!-- Sub navigation -->
+      <nav class="sub-nav">
+        <a href="laer_at_brodere.html" class="sub-nav-a">Lær At brodere</a>
+        <div class="dropdown">
+          <button class="dropbtn sub-nav-a">
+            Kreapakker
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content content-margin">
+            <a href="kreapakker.html">Alle Kreapakker</a>
+            <a href="error.html">Fødselsdag</a>
+            <a href="error.html">Jul</a>
+            <a href="error.html">Påske</a>
+            <a href="error.html">Børn</a>
+            <a href="error.html">Evergreen</a>
+            <a href="error.html">Materialer & Tilbehør</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn sub-nav-a">
+            Stingtyper
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content content-margin">
+            <a href="korssting.html">Korssting</a>
+            <a href="error.html">Fladsyning</a>
+            <a href="error.html">Franske Knuder</a>
+            <a href="error.html">Kontursting</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- sektion med "gå på opdagelse i vores julekollektion" -->
+    <section class="forside_sektion1_jul">
+      <div class="billede1_sektion1_jul">
+        <img src="images/1stroempe.png" alt="1 julestrømpe">
+      </div>
+      <div class="Overskriftjul_sektion1">
+        <h1>Gå på opdagelse i</h1>
+        <h2>Vores julekollektion</h2>
+      </div>
+      <div class="billede2_sektion1_jul">
+        <img src="images/3julesokker.png" alt="3 julesokker">
+      </div>
+      <div class="billede3_sektion1_jul">
+        <img src="images/kalendersoldater.jpg" alt="kalender mennekser">
+      </div>
+      <div class="brodtekstjul_sektion1">
+        <p>
+          Så er tiden kommet, og julen står for døren. Lav din egen personlige
+          gave eller forkæl dig selv, med et jule krea-kit.
+        </p>
+        <br>
+        <br>
+        <button onclick="window.location.href='error.html'" class="btn_line_green">Se mere</button>
+      </div>
+    </section>
+
+    <!-- Sektion KOM GODT I GANG -->
+    <section id="komgodtigangsektion">
+      <div class="bokskomgodtigang">
+        <div class="Venstrebillede">
+          <img src="images/pexels-zeys-14006558.jpg" alt="Broderingsbillede">
+        </div>
+        <div class="Højrebillede">
+          <div>
+            <h3 class="komgodtigangtekst">Kom godt i gang med dit projekt</h3>
+            <p class="komgodtigangtekst">
+              Få en guidet tur gennem brodri-universet. Lær nye tips og tricks
+              til, hvordan du kommer godt igang.
+            </p>
+              <button onclick="window.location.href='laer_at_brodere.html'" class="btn_line_beige">Lær at brodere</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Video galleri-->
+    <section class="produkt_galleri video_galleri">
+      <div class="produkt_galleri_overskrift">
+        <img src="images/videoer.svg" alt="videoer">
+      </div>
+
+      <div class="produkt_galleri_big_picture">
+        <video controls>
+          <source src="videos/kreannaalen-korssting.mp4" type="video/mp4">
+        </video>
+        <br>
+        <br>
+        <div class="produkt_galleri_big_picture_text">
+          <h4>Korssting</h4>
+          <br>
+          <p>Her kan du se, hvordan du brodere med korssting step-by-step</p>
+          <br>
+          <br>
+          <button onclick="window.location.href='korssting.html'" class="btn_filled_darkgreen">Læs mere</button>
+        </div>
+      </div>
+
+      <div class="produkt_galleri_top_small_picture">
+        <img src="images/video_top.jpg" alt="video om fladsygning">
+      </div>
+
+      <div class="produkt_galleri_top_small_picture_text">
+        <h4>Fladsygning</h4>
+      </div>
+
+      <div class="produkt_galleri_middle_small_picture">
+        <img src="images/video_middle.jpg" alt="video om franske knuder">
+      </div>
+
+      <div class="produkt_galleri_middle_small_picture_text">
+        <h4>Franske Knuder</h4>
+      </div>
+
+      <div class="produkt_galleri_lowest_small_picture">
+        <img src="images/video_lowest.jpg" alt="Video om Kontursting.">
+      </div>
+
+      <div class="produkt_galleri_lowest_small_picture_text">
+        <h4>Kontursting</h4>
+      </div>
+    </section>
+    <!---Video galleri mobil layout-->
+    <div class="video_galleri_mobile">
+      <h3>videoer</h3>
+      <br>
+      <br>
+      <div class="produkt_galleri_big_picture">
+        <video controls>
+          <source src="videos/kreannaalen-korssting.mp4" type="video/mp4">
+        </video>
+        <br>
+        <br>
+        <div class="produkt_galleri_big_picture_text">
+          <h4>Korssting</h4>
+          <br>
+          <p>Her kan du se, hvordan du brodere med korssting step-by-step</p>
+          <br>
+          <br>
+          <button onclick="window.location.href='korssting.html'" class="btn_filled_darkgreen">Læs mere</button>
+        </div>
+      </div>
+      <div class="videos_on_line">
+        <div class="video_1">
+          <img src="images/video_top.jpg" alt="video om fladsygning">
+          <h4>Fladsygning</h4>
+        </div>
+
+        <div class="video_2">
+          <img src="images/video_middle.jpg" alt="video om franske knuder">
+          <h4>Franske Knuder</h4>
+        </div>
+
+        <div class="video_3">
+          <img src="images/video_lowest.jpg" alt="Video om Kontursting.">
+          <h4>Kontursting</h4>
+        </div>
+      </div>
+    </div>
+    <!--INSTAGRAM SECTION -->
+    <section class="instagram-section">
+      <h3>Følg med på instagram</h3>
+      <img
+        id="instagram-mobil"
+        src="images/instagram-billeder/instagram-mobil1.png"
+        alt="Mobil med Instagram">
+      <div class="instagram-grid">
+        <div class="instagram-feed">
+          <img
+            src="images/instagram-billeder/Stjerneserviet-rod.jpg"
+            alt="Stjerneserviet i Rød"
+            class="instagram-image">
+          <div class="instagram-overlay">
+            <a
+              href="https://www.instagram.com/kreanaalen/"
+              target="_blank"
+              class="instagram-text">
+              @kreanaalen</a>
+          </div>
+        </div>
+        <div class="instagram-feed">
+          <img
+            src="images/instagram-billeder/julebrodserviet-med-hjerter.jpg"
+            alt="Julebrødsserviet Med Hjerter"
+            class="instagram-image">
+          <div class="instagram-overlay">
+            <a
+              href="https://www.instagram.com/kreanaalen/"
+              target="_blank"
+              class="instagram-text">
+              @kreanaalen</a>
+          </div>
+        </div>
+        <div class="instagram-feed">
+          <img
+            src="images/instagram-billeder/julesokker.jpg"
+            alt="Julesokker"
+            class="instagram-image">
+          <div class="instagram-overlay">
+            <a
+              href="https://www.instagram.com/kreanaalen/"
+              target="_blank"
+              class="instagram-text">
+              @kreanaalen</a>
+          </div>
+        </div>
+        <div class="instagram-feed">
+          <img
+            src="images/instagram-billeder/Julekalender-Noddeknaekkeren.jpg"
+            alt="Julesokker"
+            class="instagram-image">
+          <div class="instagram-overlay">
+            <a
+              href="https://www.instagram.com/kreanaalen/"
+              target="_blank"
+              class="instagram-text">
+              @kreanaalen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Kundeanmeldelser SECTION -->
+    <section class="kundeanmeldelser">
+      <h3 id="kundeanmeldeser-h3">Vores Kreakunders Anmeldelser</h3>
+      <div class="kundeanmeldelser-container">
+        <div class="kundeanmeldelser-wrapper">
+          <div class="kundeanmeldelser-card">
+            <div class="kundeanmeldelser-card-thumb">
+              <img
+                src="images/paaskeaaeganmeldelse.jpg"
+                class="review-img"
+                alt="påskeæg anmeldelse">
+            </div>
+            <div class="kundeanmeldelser-card-body">
+              <h4 class="beige-font">Happy Easter Eggs</h4>
+              <p class="review beige-font">
+                Jeg er godt tilfreds med resultatet. Dog var selve
+                papiropskriften lidt forvirrende og indviklet at forstå. Så gav
+                videoerne et plaster på såret.
+              </p>
+              <div class="rating">
+                <img
+                  src="images/broderihjerte.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+                <img
+                  src="images/broderihjerte.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+                <img
+                  src="images/broderihjerte.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+                <img
+                  src="images/broderihjerte.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+                <img
+                  src="images/broderihjerteufyldt.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+              </div>
+            </div>
+          </div>
+          <div class="kundeanmeldelser-card">
+            <div class="kundeanmeldelser-card-thumb">
+              <img
+                src="images/julestrompe.png"
+                class="review-img"
+                alt="julestrømpe anmeldelse">
+            </div>
+            <div class="kundeanmeldelser-card-body">
+              <h4 class="beige-font">Julestrømpe</h4>
+              <p class="review beige-font">
+                Jeg er vildt glad for mit broderingssæt. Det er en sød og nem
+                strømpe, som skaber hygge i hjemmet. Jeg elsker at fordybe mig i
+                det.
+              </p>
+              <div class="rating">
+                <img
+                  src="images/broderihjerte.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+                <img
+                  src="images/broderihjerte.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+                <img
+                  src="images/broderihjerte.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+                <img
+                  src="images/broderihjerte.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+                <img
+                  src="images/broderihjerte.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+              </div>
+            </div>
+          </div>
+          <div class="kundeanmeldelser-card">
+            <div class="kundeanmeldelser-card-thumb">
+              <img
+                src="images/blaabilpaavaeg.jpg"
+                class="review-img"
+                alt="bilkalender anmeldelse">
+            </div>
+            <div class="kundeanmeldelser-card-body">
+              <h4 class="beige-font">Julekalender</h4>
+              <p class="review beige-font">
+                Min dreng elsker hans hjemmelavet biler-julekalender. Super nemt
+                med videoguiden omkring korssting og så hyggeligt at lave. Dog
+                lidt tidskrævende.
+              </p>
+              <div class="rating">
+                <img
+                  src="images/broderihjerte.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+                <img
+                  src="images/broderihjerte.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+                <img
+                  src="images/broderihjerte.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+                <img
+                  src="images/broderihjerteufyldt.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+                <img
+                  src="images/broderihjerteufyldt.png"
+                  class="heart"
+                  alt="Hjerte anmeldelse">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="indicators">
+          <button class="kundeanmeldelser-active"></button>
+          <button></button>
+          <button></button>
+        </div>
+      </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+      <img class="submark" src="images/submark.svg" alt="Kreanålens submark">
+      <div class="footer-links">
+        <a class="footer-links-a" href="error.html"> Find os </a>
+        <a class="footer-links-a" href="error.html"> Handelsbetingelser </a>
+        <a class="footer-links-a" href="error.html"> Betalingsmetoder </a>
+      </div>
+      <div class="soMe-footer">
+        <a href="https://www.instagram.com/kreanaalen/" target="_blank">
+          <img class="soMe-icons" src="images/instagram.svg" alt="Sociale Medie ikoner">
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100064760449532"
+          target="_blank">
+          <img class="soMe-icons" src="images/facebook-f.svg" alt="facebook ikon">
+        </a>
+        <a href="error.html">
+          <img class="soMe-icons" src="images/pinterest-p.svg" alt="Pinterest">
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
